@@ -63,3 +63,60 @@ The automation is designed as a **modular, scalable pipeline**:
 - OAuth callback configured for secure Gmail authentication
 
 **Live Instance:**
+https://n8n-daily-news.onrender.com
+
+> Access requires authenticated login to protect workflows and credentials.
+
+---
+
+## 📂 Repository Structure
+n8n-daily-news-workflow/
+│
+├── workflows/
+│ └── daily-news-workflow.json
+│
+├── assets/
+│ └── workflow-design.png
+│
+├── .gitignore
+├── README.md
+
+
+---
+
+## 📌 Use Cases
+- Daily personal news digest
+- Automated email newsletters
+- Scheduled reporting systems
+- No-code / low-code automation demos
+- Workflow orchestration showcase
+
+---
+
+## 🔐 Security & Best Practices
+- OAuth 2.0 used instead of app passwords
+- No secrets committed to GitHub
+- `.env` and credentials excluded via `.gitignore`
+- Workflow export is safe to share
+
+---
+
+## 🧠 Key Learnings
+- Designing event-driven workflows
+- Integrating multiple APIs in automation
+- Handling OAuth in production systems
+- Deploying workflow tools to cloud platforms
+- Structuring automation projects for maintainability
+
+---
+
+## 👤 Author
+**Shravani Kairamkonda**  
+GitHub: https://github.com/Shraa98
+
+---
+
+⭐ If you found this project useful, feel free to star the repository!
+
+
+
