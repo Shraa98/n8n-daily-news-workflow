@@ -1,30 +1,65 @@
 # 📰 Automated Daily Sports & Tech News (n8n)
 
-This project automates the delivery of daily Sports and Technology news using **n8n workflow automation**.
+This project is a **fully automated, deployed news delivery system** built using **n8n workflow automation**.  
+It fetches the latest **Sports and Technology news**, formats them into a structured **HTML email**, and delivers them **automatically on a scheduled basis**.
+
+---
 
 ## 🚀 Features
-- Scheduled daily execution using Cron
-- Fetches live news from NewsAPI
-- Separates Sports and Technology articles
-- Formats content into HTML emails
-- Sends automated emails via Gmail
+- ⏰ Scheduled daily execution using **Cron (IST timezone)**
+- 🌐 Fetches live Sports & Tech news from **NewsAPI**
+- 🔀 Merges multiple API responses into a single workflow
+- 🧠 Transforms raw data using **JavaScript**
+- 📨 Generates clean, readable **HTML email content**
+- 🔐 Secure email delivery using **Gmail OAuth 2.0**
+- ☁️ Deployed on **Render** for continuous execution
+
+---
 
 ## 🛠 Tech Stack
-- n8n (Workflow Automation)
-- NewsAPI (REST API)
-- JavaScript (Data transformation)
-- Cron Scheduling
-- Gmail OAuth
+- **n8n** – Workflow Automation
+- **NewsAPI** – REST API for live news
+- **JavaScript** – Data transformation & HTML generation
+- **Cron** – Time-based scheduling
+- **Gmail OAuth 2.0** – Secure email delivery
+- **Render** – Cloud deployment
+- **GitHub** – Version control & documentation
 
-## 📂 Workflow Overview
-1. Cron Trigger starts the workflow at a fixed IST time
-2. Sports and Tech news are fetched using REST APIs
-3. Data is merged and transformed using JavaScript
-4. HTML email is generated
-5. Email is sent automatically
+---
 
-## 📌 Use Cases
-- Daily news digest
-- Automated reporting
-- Newsletter automation
-- Personal productivity automation
+## 📊 Workflow Architecture
+The automation is designed as a **modular, scalable pipeline**:
+
+1. **Cron Trigger**  
+   - Triggers the workflow daily at a fixed IST time
+
+2. **Fetch Sports News**  
+   - Calls NewsAPI with sports-related queries
+
+3. **Fetch Technology News**  
+   - Calls NewsAPI with tech-related queries
+
+4. **Merge News Results**  
+   - Appends Sports & Tech responses into a unified dataset
+
+5. **Format Email Content (JavaScript)**  
+   - Converts raw JSON into structured HTML  
+   - Handles missing titles and descriptions safely
+
+6. **Send Email (Gmail OAuth)**  
+   - Sends formatted news directly to the inbox
+
+---
+
+## 🖼 Workflow Design (n8n)
+
+![Workflow Design](assets/workflow-design.png)
+
+---
+
+## ☁️ Deployment
+- The n8n instance is deployed as a **Web Service on Render**
+- Workflows persist across restarts
+- OAuth callback configured for secure Gmail authentication
+
+**Live Instance:**
