@@ -69,21 +69,6 @@ https://n8n-daily-news.onrender.com
 
 ---
 
-## 📂 Repository Structure
-n8n-daily-news-workflow/
-│
-├── workflows/
-│ └── daily-news-workflow.json
-│
-├── assets/
-│ └── workflow-design.png
-│
-├── .gitignore
-├── README.md
-
-
----
-
 ## 📌 Use Cases
 - Daily personal news digest
 - Automated email newsletters
