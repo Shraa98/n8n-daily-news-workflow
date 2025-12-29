@@ -134,7 +134,7 @@
     },
     {
       "parameters": {
-        "sendTo": "pmdange99@gmail.com",
+        "sendTo": "pmdange99@gmail.com, kkairamshra@gmail.com",
         "subject": "Daily Sports & Tech News",
         "message": "={{ $json.htmlBody }}",
         "options": {}
@@ -150,8 +150,8 @@
       "webhookId": "45a88bf1-790a-4de7-83a3-a61e35cc788b",
       "credentials": {
         "gmailOAuth2": {
-          "id": "ZsQfu2f8T9bxCn7O",
-          "name": "Gmail account"
+          "id": "vuuMLCUVUz5i7BPj",
+          "name": "Gmail account 2"
         }
       }
     }
